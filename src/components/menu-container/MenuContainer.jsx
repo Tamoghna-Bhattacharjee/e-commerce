@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import './MenuContainer.scss';
 import {MenuItem} from '../menu-item/MenuItem.jsx';
 
-class MenuContainer extends  Component {
+class MenuContainer extends Component {
     constructor() {
         super();
         this.state = {
@@ -49,7 +49,7 @@ class MenuContainer extends  Component {
             <div className='menu-container'>
                 {
                     this.state.section.map(({title, imageUrl, size, id, linkUrl}) => {
-                            return <MenuItem key={id} title={title}/>
+                            return <MenuItem key={id} title={title} img={imageUrl} sz={size}/>
                         }
                     )
                 }

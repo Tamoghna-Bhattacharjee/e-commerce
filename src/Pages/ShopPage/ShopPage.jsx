@@ -5,12 +5,19 @@ import { CollectionPreview } from '../../components/Collection-Preview/Collectio
 class ShopPage extends React.Component {
     constructor(props) {
         super(props);
-        this.state = ShopData;
+        this.state = {
+            collections: ShopData
+        }
     }
     render() {
+        const {collections} = this.state
         return (
             <div className='shop-page'>
-                <CollectionPreview/>
+                {
+                    collections.map(({id, ...others}) => {
+                        return <CollectionPreview key={id} {...others}/>
+                    })
+                }
             </div>
         );
     }

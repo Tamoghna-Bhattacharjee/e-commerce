@@ -1,0 +1,11 @@
+.title {
+    text-align: left;
+}
+.preview {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    overflow: hidden;
+    gap: 1em;
+}

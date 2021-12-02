@@ -1,0 +1,25 @@
+.shopItem {
+    height: 350px;
+    width: 25%;
+    flex: 1 1 auto;
+    flex-direction: column;
+    .background-img {
+        width: 100%;
+        height: 90%;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 5px;
+    }
+    .shopitem-footers {
+        height: 5%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+
+        .name {
+            width: 95%;
+            text-align: left;
+        }
+    }
+}

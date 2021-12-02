@@ -8,7 +8,7 @@ export const CollectionPreview = ({title, items}) => {
             <div className='preview'>
                 {
                     items.filter((item, ind)=> ind < 4).map(({id, name, imageUrl, price}) => {
-                        return <div key={id}>{name}</div>
+                        return <div key={id} className='shopItem'>{name}</div>
                     })
                 }
             </div>

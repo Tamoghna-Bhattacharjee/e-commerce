@@ -2,7 +2,6 @@
     background-color: black;
     color: white;
     padding: 13px;
-    margin: 0 5px;
     min-width: 140px;
     width: auto;
     font-size: 18px;
@@ -18,8 +17,12 @@
         border: 1px solid black;
     }
 }
-button[G-auth='G-auth'] {
-    background-color: aqua;
+button[g-auth='G-auth'] {
+    background-color: #4285f4;
     color: white;
-    border: 1px solid black;
+    &:hover {
+        background-color: #3578e8;
+        color: white;
+        border: none;
+    }
 }

@@ -1,10 +1,15 @@
 .sign-in {
     text-align: left;
     margin: 10px 90px;
+    min-width: 380px;
     width: 30vw;
     font-family: monospace;
     span {
         font-size: 15px;
     }
-    
+    .button {
+        display: flex;
+        justify-content: space-between;
+        gap: 1em;
+    }
 }

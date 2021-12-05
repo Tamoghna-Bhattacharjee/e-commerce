@@ -30,7 +30,7 @@ export const addUser = async (userAuth, additionalData) => {
   if (!userAuth) return null;
   const ref = doc(db, `user/${userAuth.uid}`);
   const snapshot = await getDoc(ref);
-  console.log(ref);
+  //console.log(ref);
   //console.log(snapshot);
   if (!snapshot.exists()) {
     const {displayName, email} = userAuth;

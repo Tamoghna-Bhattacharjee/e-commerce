@@ -1,8 +1,9 @@
 .custom-btn {
     background-color: black;
     color: white;
-    padding: 15px;
-    min-width: 165px;
+    padding: 13px;
+    margin: 0 5px;
+    min-width: 140px;
     width: auto;
     font-size: 18px;
     font-weight: bolder;
@@ -16,4 +17,9 @@
         color: black;
         border: 1px solid black;
     }
+}
+button[G-auth='G-auth'] {
+    background-color: aqua;
+    color: white;
+    border: 1px solid black;
 }

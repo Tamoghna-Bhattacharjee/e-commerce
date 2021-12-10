@@ -15,9 +15,20 @@ class SignIn extends React.Component {
         }
     }
 
-    handelSubmit = (event) => {
+    handelSubmit = async (event) => {
         event.preventDefault();
-        
+        const {email, password} = this.state;
+        await signInWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+            this.setState({email: '', password: ''});
+        })
+        .catch((error) => {
+            const errorCode = error.code;
+            console.log(errorCode);
+            if (errorCode === "auth/user-not-found") {
+                alert("You didn't have an account. Please Sign up or log in with google");
+            }
+        });
     }
 
     handelChange = (event) => {

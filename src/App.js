@@ -28,8 +28,8 @@ class App extends Component {
               id: doc.id,
               ...doc.data()
             }
-          })
-          //console.log(this.state);
+          });
+          console.log(this.state);
         });
       } else this.setState({currUser: null});
     });

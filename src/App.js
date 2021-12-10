@@ -15,10 +15,10 @@ class App extends Component {
     }
   }
 
-  unsubscibeFromAuth = null;
+  subscription = null;
 
   componentDidMount () {
-    this.unsubscibeFromAuth = auth.onAuthStateChanged(async user => {
+    this.subscription = auth.onAuthStateChanged(async user => {
       addUser(user);
       this.setState({currUser: user});
       //console.log(user);
@@ -26,7 +26,7 @@ class App extends Component {
   }
 
   componentWillUnmount() {
-    this.unsubscibeFromAuth();
+    this.subscription();
   }
 
   render() {

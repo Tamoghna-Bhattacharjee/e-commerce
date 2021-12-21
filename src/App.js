@@ -47,6 +47,11 @@ class App extends Component {
   }
 }
 
+/*
+  this will pass setCurrUser as the prop and when we use setCurrUser(user) it will trigger 
+  setCurrentUser(user) action to all the reducers 
+*/
+
 const mapDispatchToProps = dispatch => {
   return {
     setCurrUser: (user) => dispatch(setCurrentUser(user))
